@@ -22,14 +22,15 @@ def maximo(lista):
 
 
 def prueba():
-    print("Ingrese 5 números")
-    a = int(input("# "))
-    e = int(input("# "))
-    i = int(input("# "))
-    o = int(input("# "))
-    u = int(input("# "))
+    lista = []
+    
+    longitud_lista = int(input("Cuántos valores desea cargar a la lista? "))
 
-    lista = [a, e, i, o, u]
+    while longitud_lista > 0:
+        ingreso = int(input("Valor a agregar: "))
+        lista.append(ingreso)
+        longitud_lista -= 1
+
     print("El menor es:", minimo(lista))
     print("El maximo es:", maximo(lista))
 

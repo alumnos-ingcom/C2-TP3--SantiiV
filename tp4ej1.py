@@ -12,7 +12,6 @@ def ingreso_entero(mensaje):
     ingreso = input(mensaje + "# ")
     try:
         entero = int(ingreso)
-        entero = "entero"
     except ValueError as err:
         raise IngresoIncorrecto("No es entero!") from err
     return entero
@@ -49,10 +48,10 @@ def prueba():
     eleccion = input("# ")
     if eleccion == "1":
         numero = ingreso_entero("Ingrese un número entero ")
-        print(f"El número ingresado es {numero}")
+        print(f"El número ingresado ({numero}) es entero")
     elif eleccion == "2":
         numero = ingreso_entero_reintento("Ingrese un número entero ")
-        print(f"El número ingresado es {numero}")
+        print(f"El número ingresado ({numero}) es entero")
     elif eleccion == "3":
         numero = ingreso_entero_restringido("Ingrese un número entero entre 0 y 10 ")
         print(f"El número ingresado es {numero}")

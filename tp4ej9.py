@@ -9,14 +9,14 @@ def es_primo(numero):
             contador += 1
             
     if contador == 2:
-        return "Es primo"
+        return True
     else:
-        return "No es primo"
+        return False
 
 
 def prueba():
     numero = int(input("Ingrese un número para saber si es primo "))
-    print("El numero ingresado:")
+    print("El numero ingresado es:")
     print(es_primo(numero))
 
 

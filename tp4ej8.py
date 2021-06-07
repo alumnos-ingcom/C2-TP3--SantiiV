@@ -64,13 +64,25 @@ def ordenar_menor_a_mayor(uno, dos, tres):
 
 
 def prueba():
-    print("Ingrese 3 números")
-    a = int(input("# "))
-    e = int(input("# "))
-    i = int(input("# "))
-
-    print("Mayor a menor:", ordenar_mayor_a_menor(a, e, i))
-    print("Menor a mayor:", ordenar_menor_a_mayor(a, e, i))
+    lista = []
+    longitud_lista = 3
+    print("Ingrese 3 valores")
+    while longitud_lista > 0:
+        ingreso = int(input("Valor a agregar: "))
+        lista.append(ingreso)
+        longitud_lista -= 1
+        
+    valoruno = lista[0]
+    valordos = lista[1] 
+    valortres = lista[2]
+    
+    print("Mayor a menor:")
+    resultadouno = ordenar_mayor_a_menor(valoruno, valordos, valortres)
+    print(resultadouno)
+    
+    print("Menor a mayor:")
+    resultadodos = ordenar_menor_a_mayor(valoruno, valordos, valortres)
+    print(resultadodos)
 
 
 if __name__ == "__main__":

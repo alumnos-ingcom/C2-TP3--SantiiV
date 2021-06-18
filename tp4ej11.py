@@ -7,11 +7,11 @@ def es_palindromo(texto):
     longitud = len(texto)
     
     if longitud % 2 == 0:
-        "Si el texto es par"
+        """Si el texto es par"""
         izquierda = texto[:longitud // 2]
         derecha = texto[longitud // 2:]  
     else:
-        "Si el texto es impar"
+        """Si el texto es impar"""
         izquierda = texto[:longitud // 2]
         derecha = texto[longitud // 2 + 1:]
     
